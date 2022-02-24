@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script></script>
+    <script></script>
+    <title>Image recognation </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <center>
+           <h3 class="btn btn-default heading "> Image Recognation </h3>
+           <br>
+           <br>
+
+
+           
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+      <b class="name_of_objects">
+       Pencil
+        <hr>
+        Eraser
+        <hr>
+       glasses
+        <hr>
+        Book
+        <hr>
+        Bottle
+        <hr>
+      </b>
+
+      <label>Webcam View - </label>
+      <div id="camera"></div>
+      <br>
+      <br>
+      <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+      <div id="result"></div>
+      <br>
+      <br>
+      
+      <button onclick="check();" class="btn btn-success">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object : <span id="result_object_name"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
+
+       </center>
+   </div> 
+</body>
+</html>
